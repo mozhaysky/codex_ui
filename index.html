@@ -9,6 +9,10 @@
   <h1>Jira Task Text Editor</h1>
   <label for="taskNumber">Task number</label>
   <input id="taskNumber" type="text" placeholder="e.g., PROJ-123" />
+  <div id="analysisToggle">
+    <label><input type="radio" name="analyseType" value="businessValidation" checked /> Анализ требований</label>
+    <label><input type="radio" name="analyseType" value="testSpecification" /> Тестовая спецификация</label>
+  </div>
   <button id="fetchButton">Fetch & Process</button>
 
   <div id="originalContainer">

@@ -1,5 +1,6 @@
 document.getElementById('fetchButton').addEventListener('click', async () => {
   const taskNumber = document.getElementById('taskNumber').value.trim();
+  const analyseType = document.querySelector('input[name="analyseType"]:checked').value;
   if (!taskNumber) {
     alert('Please enter a task number');
     return;
@@ -8,7 +9,7 @@ document.getElementById('fetchButton').addEventListener('click', async () => {
     const resp = await fetch('https://n8n.t-tech.team/webhook-test/validate-requirements', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ issueKey: taskNumber })
+      body: JSON.stringify({ issueKey: taskNumber, analyseType })
     });
     if (!resp.ok) {
       throw new Error('Server error');

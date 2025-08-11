@@ -2,4 +2,5 @@ body { font-family: Arial, sans-serif; margin: 2rem; }
 input, textarea { width: 100%; margin-top: 0.5rem; }
 textarea { height: 200px; }
 button { margin-top: 1rem; }
+#analysisToggle { margin-top: 1rem; }
 #originalContainer, #processedContainer { margin-top: 2rem; display: none; }
