@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>n8n Jira Task Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Jira Task Text Editor</h1>
+  <label for="taskNumber">Task number</label>
+  <input id="taskNumber" type="text" placeholder="e.g., PROJ-123" />
+  <button id="fetchButton">Fetch & Process</button>
+
+  <div id="originalContainer">
+    <h2>Original Text</h2>
+    <p id="originalText"></p>
+  </div>
+
+  <div id="processedContainer">
+    <h2>Processed Text (editable)</h2>
+    <textarea id="processedText"></textarea>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
